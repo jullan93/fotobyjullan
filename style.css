@@ -3,6 +3,38 @@ body {
     background-color: white;
 }
 
+p {
+  size: 14px;
+  color: #000;
+  text-align: left; 
+}
+
+h1 {
+  font-size: 32px; /* 200% */
+}
+
+h2 {
+  font-size: 28px; /* 175% */
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px; /* 150% */
+  padding-left: 15px;
+  text-align: left;
+}
+
+h4 {
+  font-size: 20px; /* 125.0% */
+}
+
+h5 {
+  font-size: 18px; /* 112.5% */
+}
+
+h6 {
+  font-size: 16px; /* 100% */
+}
 
 img {
   max-width: 100%;
@@ -32,10 +64,12 @@ img {
 
   .col-3 {
     width: 25%;
+    text-align: center;
   }
 
   .col-4 {
     width: 33.33%;
+    text-align: center;
   }
 
   .col-5 {
@@ -134,10 +168,15 @@ img {
   }
   
   ul.topnav li a.active {
-    background-color: #fff;
+    background-color: #ccc;
   }
   
   ul.topnav li.right {
+    float: right;
+  }
+
+  ul.topnav li.active {
+    background-color: #ccc;
     float: right;
   }
   
