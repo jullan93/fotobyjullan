@@ -9,6 +9,12 @@ p {
   text-align: left; 
 }
 
+.p2 {
+  size: 14px;
+  color: #fff;
+  text-align: left; 
+}
+
 h1 {
   font-size: 32px; /* 200% */
 }
@@ -39,6 +45,15 @@ h6 {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 * {
