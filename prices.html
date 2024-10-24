@@ -5,25 +5,47 @@
 <link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://kit.fontawesome.com/8b2cf6d155.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </head>
 <body>
 
     <!-- meny -->
-    <ul class="topnav">
-        <li><a href="index.html">FOTO BY <b>JULLAN</b>
-        </a></li>
-        <li class="right"><a href="contact.html">KONTAKT</a></li>
-        <li class="active"><a href="prices.html">PRISER</a></li>
-        <li class="right"><a href="commercial.html">REKLAM</a></li>
-        <li class="right"><a href="wedding.html">BRÖLLOP</a></li>
-        <li class="right"><a href="portrait.html">PORTRÄTT</a></li>
-    </ul>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="wedding.html">BRÖLLOP</a>
+          <a href="portrait.html">PORTRÄTT</a>
+          <a href="commercial.html">REKLAM</a>
+          <a href="prices.html">PRISER</a>
+          <a href="contact.html">KONTAKT</a>
+        </div>
+      </div>
+      
+      <div class="col-12-menu">
+        <a href="index.html"><img src="loggo.png" class="img-loggo"></a>
+      <span style="font-size:24px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
 
-<header>
-    <a href="index.html"><img src="gallery/header.jpg"></a>
-</header>
+    <div class="header">
+        <a href="index.html"><img src="gallery/header.jpg"></a>
+     </div>
 
 <content>
+
+    <div class="row"></div>
+        <div class="col-3">
+            <img src="gallery/prices/1.jpg" width="100%">
+        </div><!-- 25% -->
+        <div class="col-3">
+            <img src="gallery/prices/2.jpg" width="100%">
+        </div><!-- 25% -->
+        <div class="col-3">
+            <img src="gallery/prices/3.jpg" width="100%">
+        </div><!-- 25% -->
+        <div class="col-3">
+            <img src="gallery/prices/4.jpg" width="100%">
+        </div><!-- 25% -->
+    </div>
 
     <div class="row">
         <div class="col-12">
@@ -121,6 +143,21 @@
             </p>
         </div> <!-- 25% -->
       </div>
+
+      <div class="row"></div>
+        <div class="col-3">
+            <img src="gallery/prices/5.jpg" width="100%">
+        </div><!-- 25% -->
+        <div class="col-3">
+            <img src="gallery/prices/6.jpg" width="100%">
+        </div><!-- 25% -->
+        <div class="col-3">
+            <img src="gallery/prices/7.jpg" width="100%">
+        </div><!-- 25% -->
+        <div class="col-3">
+            <img src="gallery/prices/8.jpg" width="100%">
+        </div><!-- 25% -->
+    </div>
 
       <div class="row"></div>
         <div class="col-12">

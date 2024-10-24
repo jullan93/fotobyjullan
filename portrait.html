@@ -5,47 +5,58 @@
 <link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://kit.fontawesome.com/8b2cf6d155.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
     <!-- meny -->
-    <ul class="topnav">
-        <li><a href="index.html">FOTO BY <b>JULLAN</b>
-        </a></li>
-        <li class="right"><a href="contact.html">KONTAKT</a></li>
-        <li class="right"><a href="prices.html">PRISER</a></li>
-        <li class="right"><a href="commercial.html">REKLAM</a></li>
-        <li class="right"><a href="wedding.html">BRÖLLOP</a></li>
-        <li class="active"><a href="portrait.html">PORTRÄTT</a></li>
-    </ul>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="wedding.html">BRÖLLOP</a>
+        <a href="portrait.html">PORTRÄTT</a>
+        <a href="commercial.html">REKLAM</a>
+        <a href="prices.html">PRISER</a>
+        <a href="contact.html">KONTAKT</a>
+      </div>
+    </div>
+    
+    <div class="col-12-menu">
+      <a href="index.html"><img src="loggo.png" class="img-loggo"></a>
+    <span style="font-size:24px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </div>
 
-<header>
-  <a href="index.html"><img src="gallery/header.jpg"></a>
-</header>
+  <div class="header">
+    <a href="index.html"><img src="gallery/header.jpg"></a>
+ </div>
 
-    <div class="row">
-        <div class="col-3"><img src="gallery/portrait/1.jpg"></div> <!-- 25% -->
-        <div class="col-3"><img src="gallery/portrait/2.jpg"></div> <!-- 25% -->
-        <div class="col-3"><img src="gallery/portrait/3.jpg"></div> <!-- 25% -->
-        <div class="col-3"><img src="gallery/portrait/4.jpg"></div> <!-- 25% -->
-      </div>
-      <div class="row">
-        <div class="col-3"><img src="gallery/portrait/5.jpg"></div> <!-- 25% -->
-        <div class="col-3"><img src="gallery/portrait/6.jpg"></div> <!-- 25% -->
-        <div class="col-3"><img src="gallery/portrait/7.jpg"></div> <!-- 25% -->
-        <div class="col-3"><img src="gallery/portrait/8.jpg"></div> <!-- 25% -->
-      </div>
-      <div class="row">
-        <div class="col-3"><img src="gallery/portrait/9.jpg"></div> <!-- 25% -->
-        <div class="col-3"><img src="gallery/portrait/10.jpg"></div> <!-- 25% -->
-        <div class="col-3"><img src="gallery/portrait/11.jpg"></div> <!-- 25% -->
-        <div class="col-3"><img src="gallery/portrait/12.jpg"></div> <!-- 25% -->
-      </div>
-      <div class="row">
-        <div class="col-3"><img src="gallery/portrait/13.jpg"></div> <!-- 25% -->
-        <div class="col-3"><img src="gallery/portrait/14.jpg"></div> <!-- 25% -->
-        <div class="col-6"><img src="gallery/portrait/15.jpg"></div> <!-- 50% -->
-      </div>
+ <div class="row">
+  <div class="col-3">
+      <h3>REBECCA & JAKOB</h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-3"><img src="gallery/portrait/1.jpg"></div> <!-- 25% -->
+  <div class="col-3"><img src="gallery/portrait/2.jpg"></div> <!-- 25% -->
+  <div class="col-3"><img src="gallery/portrait/3.jpg"></div> <!-- 25% -->
+  <div class="col-3"><img src="gallery/portrait/4.jpg"></div> <!-- 25% -->
+</div>
+<div class="row">
+  <div class="col-3"><img src="gallery/portrait/5.jpg"></div> <!-- 25% -->
+  <div class="col-3"><img src="gallery/portrait/6.jpg"></div> <!-- 25% -->
+  <div class="col-3"><img src="gallery/portrait/7.jpg"></div> <!-- 25% -->
+  <div class="col-3"><img src="gallery/portrait/8.jpg"></div> <!-- 25% -->
+</div>
+<div class="row">
+  <div class="col-3"><img src="gallery/portrait/9.jpg"></div> <!-- 25% -->
+  <div class="col-3"><img src="gallery/portrait/10.jpg"></div> <!-- 25% -->
+  <div class="col-3"><img src="gallery/portrait/11.jpg"></div> <!-- 25% -->
+  <div class="col-3"><img src="gallery/portrait/12.jpg"></div> <!-- 25% -->
+</div>
+
+  <img src="gallery/next.png" alt="Next icon - image" id="nextBtn">
+</div>
 
 <div class="row">
     <div class="col-12-footer">
@@ -68,5 +79,6 @@
     </div>
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
