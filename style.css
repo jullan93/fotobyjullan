@@ -239,7 +239,7 @@ a {
   font-size: 1.2rem;
   text-align: center;
   line-height: 46px;
-  background: #fff;
+  background: rgb(200, 200, 200);;
   border-radius: 50%;
   transform: translateY(-50%);
 }
