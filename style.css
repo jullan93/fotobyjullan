@@ -239,7 +239,8 @@ a {
   font-size: 1.2rem;
   text-align: center;
   line-height: 46px;
-  background: rgb(200, 200, 200);;
+  background: rgb(200, 200, 200);
+  opacity: 70%;
   border-radius: 50%;
   transform: translateY(-50%);
 }
