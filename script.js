@@ -15,7 +15,7 @@ arrowIcons = document.querySelectorAll(".wrapper i");
 
 let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
 
-
+// funktion för nästa/föregående knapp inte syns vid första/sista bilden
 const showHideIcons = () => {
     let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
     arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
@@ -32,17 +32,17 @@ arrowIcons.forEach(icon => {
 });
 
 const autoSlide = () => {
-    //if there is no image left to scroll then return from here
+    // funktion om där inte finns någon bild till höger
     if(carousel.scrollLeft == (carousel.scrollWidth - carousel.clientWidth)) return;
 
     positionDiff = Math.abs(positionDiff);
     let firstImgWidth = firstImg.clientWidth + 14;
     let valDifference = firstImgWidth - positionDiff;
 
-    if(carousel.scrollLeft > prevScrollLeft) { //if user is scrolling to the right
+    if(carousel.scrollLeft > prevScrollLeft) { // funktion för att scrolla till höger
         return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
     }
-    // if user is scrolling to the left
+    // funktion för att scrolla till vänster
     carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
 }
 
@@ -71,6 +71,7 @@ const dragStop = () => {
     autoSlide();
 }
 
+// vad som händer när man använder muspekare eller finger att byta bild
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("touchstart", dragStart);
 
