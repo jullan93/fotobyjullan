@@ -1,153 +1,415 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Foto by Jullan</title>
+<title>Julia Billing | Fotograf i Halland</title>
+
+<!-- länk till styling i css -->
 <link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://kit.fontawesome.com/8b2cf6d155.js" crossorigin="anonymous"></script> <!-- extern script för ikoner i footer -->
-  <meta name="facebook-domain-verification" content="2p6p4kqkcy67in4xgk2tl3p1kxjcgq" />
+
+<!-- extern script för ikoner på hemsidan -->
+<script src="https://kit.fontawesome.com/8b2cf6d155.js" crossorigin="anonymous"></script>
+
+<!-- länk till funktioner med Javascript -->
+<script src="script.js"></script> 
 </head>
 <body>
 
-  <!-- fast meny i överkant -->
-  <div class="col-12-menu">
-    <div nav>
-        <div class="col-1-2">
-            <a href="wedding.html">BRÖLLOP</a>
-        </div>
-        <div class="col-1-2">
-            <a href="portrait.html">PORTRÄTT</a>
-        </div>
-        <div class="col-1-2">
-            <a href="family.html">FAMILJ</a>
-        </div>
-        <div class="col-1-2">
-            <a href="index.html">
-            <img src="logotyp-black.png" class="img-loggo">
-            </a>
-        </div>
-        <div class="col-1-2">
-            <a href="contact.html">KONTAKT & PRISER</a>
-        </div>
-        <div class="col-1-2">
-            <a href="about.html">OM MIG</a>
-        </div>
-        <div class="col-1-2">
-            <a href="faq.html">FAQ</a>
-        </div>                       
-    </div>
- </div> 
-
- <!-- header -->
- <div class="header">
-    <img src="gallery/header.jpg">
- </div>
-
- <div class="col-6"><!-- 50% -->
-  <img src="gallery/wedding/22.jpg" width="70%">
- </div>
- <div class="col-6"><!-- 50% -->
-  <h2>Där kärleken spirar, där är jag med min kamera</h2>
-  <p3>Oavsett om ni står framför altaret i en vacker kyrka, omringas av naturens magi i skogen, 
-    <br/>blickar ut över fjällens oändlighet, eller dansar barfota i sanden på en strand, 
-    <br/>så är jag där för att fånga er kärlek. 
-    <br/>
-    <br/>
-    För mig handlar det inte bara om att ta bilder, 
-    <br/>utan om att skapa tidlösa minnen som berättar er historia – precis så som ni upplevde den. 
-    <br/>Jag letar efter de små, äkta ögonblicken: en nervös hand som smyger sig in i en annan, 
-    <br/>ett ögonblick av tystnad när ni möts för första gången som brud och brudgum, 
-    <br/> eller lyckotårarna hos en förälder. 
-    <br/>
-    <br/>Dessa stunder är magin jag vill ge tillbaka till er!</p3>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <div class="col-6-btn">
-    <center><div class="btn">
-      <a href="contact.html">SE PAKET & PRISER</a>
-      </div></center>
-    </div>
-    <div class="col-6-btn">
-      <center><div class="btn">
-        <a href="mailto:juliabilling93@gmail.com">SKICKA BOKNINGSFÖRFRÅGAN</a>
-        </div></center>
+    <!-- menues -->
+     
+    <!-- overlay menu for mobile devices -->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+          <a href="index.html" class="">Hem</a>
+          <a href="wedding.html" class="">Bröllop</a>
+          <a href="family.html" class="">Familj</a>
+          <a href="portrait.html" class="">Porträtt</a>
+          <a href="contact.html" class="">Priser & Kontakt</a>
+          <a href="about.html" class="">Om mig</a>
+          <a href="faq.html" class="">FAQ</a>
+          <a href="https://instagram.com/fotobyjullan" class=""><i class="fab fa-instagram fa-2xs"></i></a>
+          <a href="https://facebook.com/fotobyjullan" class=""><i class="fab fa-facebook-f fa-2xs"></i></a>
       </div>
- </div>
+    </div>
 
- <div class="col-6"><!-- 50% -->
-  <h2>Bilder som väcker känslor – om och om igen</h2>
-  <p3>Min största glädje som bröllopsfotograf är att veta att mina bilder kan bli en del av ert liv.
-    <br/>När ni tittar tillbaka på dem, vill jag att ni inte bara ska se hur ni såg ut, 
-    <br/>utan känna exakt hur det kändes att vara där. 
-    <br/>
-    <br/>
-    Värmen från solen, skrattet från era vänner och kärleken ni delade den dagen – 
-    <br/>allt fångat i bilder som ni kommer att vårda för alltid. 
-    <br/>
-    <br/>
-    Jag finns där för att skapa en trygg och avslappnad atmosfär, så att ni kan vara er själva. 
-    <br/>Tillsammans skapar vi en berättelse som följer er, oavsett vart livet tar er. 
-    <br/>
-    Er kärlek är unik, och era bilder förtjänar att vara lika speciella.</p3>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <div class="col-6-btn">
-      <center><div class="btn">
-        <a href="contact.html">SE PAKET & PRISER</a>
-        </div></center>
-      </div>
-      <div class="col-6-btn">
-        <center><div class="btn">
-          <a href="mailto:juliabilling93@gmail.com">SKICKA BOKNINGSFÖRFRÅGAN</a>
-          </div></center>
+      <span class="openbtn" onclick="openNav()"><p class="brand">Fotografi av Julia Billing</p> &#9776;</span>
+    <!-- .overlay menu for mobile devices -->
+    
+      <!-- Fixed Menu for larger devices -->
+      <div id="fixedMenu">
+        <div class="col-2 brand">
+            <a href="index.html">Fotografi av Julia Billing</a>
         </div>
- </div>
- <div class="col-6"><!-- 50% -->
-  <img src="gallery/wedding/23.jpg" width="70%">
- </div>
+        <div class="col-7">
+            <a href="index.html" class="">Hem</a>
+            <a href="wedding.html" class="">Bröllop</a>
+            <a href="family.html" class="">Familj</a>
+            <a href="portrait.html" class="">Porträtt</a>
+            <a href="contact.html" class="">Priser & Kontakt</a>
+            <a href="about.html" class="">Om mig</a>
+            <a href="faq.html" class="">FAQ</a>
+        </div>
+        <div class="col-2">
+            <div class="text text-primary">
+                <a href="https://instagram.com/fotobyjullan" class=""><i class="fab fa-instagram fa-2xs"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61567155113697" class=""><i class="fab fa-facebook-f fa-2xs"></i></a>
+            </div> 
+        </div>
+    </div>
+    
+      <!-- .Fixed Menu for larger devices -->
+    <!-- .menues -->
 
- <!-- footer -->
- <div class="col-12-footer">
-  <img src="logotyp-hel.png" width="40%">
-  <br/>
-  <br/>
-  <a href="https://instagram.com/fotobyjullan">
-  <i class="fa-brands fa-square-instagram fa-2xl" style="color: #364754;"></i>
-  </a>
-  <a href="https://www.facebook.com/profile.php?id=61567155113697">
-  <i class="fa-brands fa-square-facebook fa-2xl" style="color: #364754;"></i>
-  </a>
-  <a href="mailto:juliabilling93@gmail.com">
-      <i class="fa-solid fa-square-envelope fa-2xl" style="color: #364754;"></i>
-  </a>
-  <br/>
-  <br/>
-  <br/>
-  <p3>OSKARSTRÖM, HALLAND</p3>
-  <br/>
-  <br/>
-  <p3>JULIABILLING93@GMAIL.COM</p3>
-  <br/>
-  <br/>
-  <p3>+46736 - 81 22 40</p3>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <div id="p4">ALL CONTENT COPYRIGHT © 2024 FOTOGRAFI AV JULIA BILLING - GODKÄND FÖR F-SKATT</div>
+    <!-- header -->
+<div class="header">
+    <img src="gallery/header.jpg" alt="">
 </div>
+<!-- .header -->
+
+<!-- main -->
+ <!-- indormation & bild 1 -->
+  <div class="col-12">
+    <!-- bild -->
+    <div class="col-6 content-center">
+      <img src="gallery/wedding/40.jpg" class="about-img">
+    </div>
+
+    <!-- information -->
+    <div class="col-6 content-center text-dark">
+      <p class="title">Där kärleken spirar, där är jag med min kamera</p>
+      <p>Oavsett om ni står framför altaret i en vacker kyrka, eller omringas av narurens
+        magi i skogen, blickar ut över fjällens oändlighet, eller dansar barfota i sanden
+        på en strand, så är jag där för att fånga er kärlek på bild.
+      </p>
+      <p>För mig handlar det inte bara om att ta bilder, utan om att skapa tidlösa minnen
+        som berättar er historia - presic så som ni upplever den.
+        Jag letar efter de små, äkta ögonblicken : en nervös hand som smyger sig in i en
+        annan, ett ögonblick av tystnad när ni möts för första gången som brud och brudgum,
+        eller lyckotårarna hos en förälder.
+      </p>
+      <p>Dessa stunder är magin jag vill ge tillbaka till er!
+      </p>
+      <!-- .information -->
+
+      <br><br>
+
+      <!-- knapp 1 -->
+      <div class="col-4">
+        <div class="btn">
+          <a href="contact.html">SE PAKET & PRISER</a>
+          </div>
+      </div>
+      <!-- .knapp 1 -->
+      
+      <!-- knapp 2 -->
+      <div class="col-7">
+        <div class="btn">
+          <a href="mailto:juliabilling93@gmail.com">SKICKA BOKNINGSFÖRFRÅGAN</a>
+          </div>
+      </div>
+      <!-- .knapp 2 -->
+    </div>
+  </div>
+ <!-- .information & bild 1 -->
+
+ <!-- information & bild 2 -->
+  <div class="col-12">
+    <!-- information -->
+    <div class="col-6 content-center text-dark">
+      <p class="title"> Bilder som väcker känslor - om och om igen</p>
+      <p>Min största glädje som bröllopsfotograf är att veta att mina bilder kan bli en del av ert liv.
+        När ni tittar tillbaka på dem, vill jag att ni inte bara ska se hur ni såg ut, utan känna exakt
+        hur det kändes att vara där.
+      </p>
+      <p>Värmen från solen, skrattet från era vänner och kärleken ni delade den dagen - allt fångat
+        i bilder som ni kommer att vårda för alltid.
+      </p>
+      <p>Jag finns där för att skapa en trygg och avslappnande atmostär, så att ni kan vara er själva.
+        Tillsammans skapar vi en berättelse som följer er, oavsett var livet tar er.
+      </p>
+      <p>Er kärlek är unik, och era bilder förtjänar att vara lika speciella!</p>
+      <!-- .information -->
+
+      <br><br>
+
+      <!-- knapp 1 -->
+      <div class="col-4">
+        <div class="btn">
+          <a href="contact.html">SE PAKET & PRISER</a>
+          </div>
+      </div>
+      <!-- .knapp 1 -->
+      
+      <!-- knapp 2 -->
+      <div class="col-7">
+        <div class="btn">
+          <a href="mailto:juliabilling93@gmail.com">SKICKA BOKNINGSFÖRFRÅGAN</a>
+          </div>
+      </div>
+      <!-- .knapp 2 -->
+    </div>
+    
+    <!-- bild -->
+    <div class="col-6 content-center">
+      <img src="gallery/wedding/23.jpg" class="about-img">
+    </div>
+    <!-- .bild -->
+  </div>
+  <!-- .information & bild 2 -->
+  
+
+ <!-- portfolio -->
+
+<div class="col-12 bg-primary text-light content-center">
+ <p class="title">𖹭 PORTFOLIO - BRÖLLOP 𖹭</p>
+</div>
+
+<!-- grupp 1 -->
+<div class="col-12">
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/1.jpg" alt="">
+  </div>
+
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/2.jpg" alt="">
+  </div>
+
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/3.jpg" alt="">
+  </div>
+
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/4.jpg" alt="">
+  </div>
+</div>
+<!-- .grupp 1 -->
+
+<!-- grupp 2 -->
+<div class="col-12">
+  <div class="col-6"><!-- 50% -->
+    <img src="gallery/wedding/5.jpg" alt="">
+  </div>
+  <div class="col-6"><!-- 50% -->
+    <img src="gallery/wedding/6.jpg" alt="">
+  </div>
+</div>
+<!-- .grupp 2 -->
+
+<!-- grupp 3 -->
+<div class="col-12">
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/7.jpg" alt="">
+  </div>
+
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/8.jpg" alt="">
+  </div>
+
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/9.jpg" alt="">
+  </div>
+
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/10.jpg" alt="">
+  </div>
+</div>
+<!-- .grupp 3 -->
+
+<!-- grupp 4 -->
+<div class="col-12">
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/12.jpg" alt="">
+  </div>
+
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/13.jpg" alt="">
+  </div>
+
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/14.jpg" alt="">
+  </div>
+
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/15.jpg" alt="">
+  </div>
+</div>
+<!-- .grupp 4 -->
+
+<!-- grupp 5 -->
+<div class="col-12">
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/16.jpg" alt="">
+  </div>
+
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/18.jpg" alt="">
+  </div>
+
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/19.jpg" alt="">
+  </div>
+
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/20.jpg" alt="">
+  </div>
+</div>
+<!-- grupp 5 -->
+
+<!-- grupp 6 -->
+<div class="col-12">
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/21.jpg" alt="">
+  </div>
+
+  <div class="col-6"> <!-- 50% -->
+    <img src="gallery/wedding/11.jpg" alt="">
+  </div>
+
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/23.jpg" alt="">
+  </div>
+</div>
+<!-- .grupp 6 -->
+
+<!-- grupp 7 -->
+<div class="col-12">
+  <div class="col-6"> <!-- 50% -->
+    <img src="gallery/wedding/25.JPG" alt="">
+  </div>
+
+  <div class="col-6"> <!-- 50% -->
+    <img src="gallery/wedding/24.JPG" alt="">
+  </div>
+</div>
+<!-- .grupp 7 -->
+
+<!-- grupp 8 -->
+<div class="col-12">
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/26.JPG" alt="">
+  </div>
+
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/27.JPG" alt="">
+  </div>
+
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/28.JPG" alt="">
+  </div>
+
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/29.JPG" alt="">
+  </div>
+</div>
+<!-- .grupp 8 -->
+
+<!-- grupp 9 -->
+<div class="col-12">
+  <div class="col-6"> <!-- 50% -->
+    <img src="gallery/wedding/30.JPG" alt="">
+  </div>
+
+  <div class="col-6"> <!-- 50% -->
+    <img src="gallery/wedding/31.JPG" alt="">
+  </div>
+</div>
+<!-- .grupp 9 -->
+
+<!-- grupp 10 -->
+<div class="col-12">
+  <div class="col-6"> <!-- 50% -->
+    <img src="gallery/wedding/32.JPG" alt="">
+  </div>
+
+  <div class="col-6"> <!-- 50% -->
+    <img src="gallery/wedding/33.JPG" alt="">
+  </div>
+</div>
+<!-- .grupp 10 -->
+
+<!-- grupp 11 -->
+<div class="col-12">
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/34.JPG" alt="">
+  </div>
+
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/35.JPG" alt="">
+  </div>
+
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/36.JPG" alt="">
+  </div>
+
+  <div class="col-3"> <!-- 33% -->
+    <img src="gallery/wedding/37.JPG" alt="">
+  </div>
+</div>
+<!-- .grupp 11 -->
+
+ <!-- .portfolio -->
+
+
+ <!-- .main -->
+
+
+ <!-- Footer -->
+<!-- about me & contact info -->
+<div class="col-12 bg-primary">
+  <div class="col-6">
+      <p class="title text-light">Om Mig</p>
+      <p class="text-light">Bröllop- och familjefotograf som utgår från Halland,
+          men som mer än gärna reser för att föreviga era stora ögonblick.
+      </p>
+  
+          <address class="text-light">
+              <i class="fas fa-map-marker-alt"></i> 
+              Oskarström, Halland, Sverige
+          </address>
+  
+          <div class="phone text-light">
+              <i class="fas fa-mobile"></i> 
+              +46736 - 81 22 40 (SMS, så återkommer jag så fort jag kan!)
+          </div>
+          <div class="email text-light">
+              <i class="fas fa-envelope"></i> 
+              juliabilling93@gmail.com
+          </div>
+  </div>
+  <!-- .about me & contact info -->
+
+  <!-- tags & social media -->
+<div class="col-6">
+  <h2 class="title text-light">Tags</h2>
+
+  <div class="tags">
+          <a href="wedding.html" class="nav-link">Bröllop</a>
+          <a href="family.html" class="nav-link">Familj</a>
+          <a href="portrait.html" class="nav-link">Porträtt</a>
+          <a href="contact.html" class="nav-link">Priser</a>
+  </div>
+  
+
+  <h2 class="title text-light">Social</h2>
+
+  <div class="social">
+      <div class="d-flex flex-wrap">
+      <a href="https://instagram.com/jullansadventures" class="nav-link"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com/jullansadventures" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+      <a href="mailto:juliabilling93@gmail.com" class="nav-link"><i class="fas fa-envelope"></i></a>
+      </div>
+  </div>        
+</div>
+</div>
+<!-- .tags & social media -->
+
+<!-- copyright -->
+<div class="col-12 bg-primary">
+  <p class="text-light content-center">ALL CONTENT COPYRIGHT © 2025 JULIA BILLING - GODKÄND FÖR F-SKATT</p>
+</div>
+  <!-- copyright -->
+<!-- .Footer -->
 
 </body>
 </html>

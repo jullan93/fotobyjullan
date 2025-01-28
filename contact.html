@@ -1,55 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Fotograf Julia Billing - Bröllopsfotograf i Halland</title>
+<title>Julia Billing | Fotograf i Halland</title>
+
+<!-- länk till styling i css -->
 <link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://kit.fontawesome.com/8b2cf6d155.js" crossorigin="anonymous"></script> <!-- extern script för ikoner i footer -->
+
+<!-- extern script för ikoner på hemsidan -->
+<script src="https://kit.fontawesome.com/8b2cf6d155.js" crossorigin="anonymous"></script>
+
+<!-- länk till funktioner med Javascript -->
 <script src="script.js"></script> 
-    <meta name="facebook-domain-verification" content="2p6p4kqkcy67in4xgk2tl3p1kxjcgq" />
 </head>
 <body>
 
-    <!-- fast meny i överkant -->
-     <div class="col-12-menu">
-        <div nav>
-            <div class="col-1-2">
-                <a href="wedding.html">BRÖLLOP</a>
-            </div>
-            <div class="col-1-2">
-                <a href="portrait.html">PORTRÄTT</a>
-            </div>
-            <div class="col-1-2">
-                <a href="family.html">FAMILJ</a>
-            </div>
-            <div class="col-1-2">
-                <a href="index.html">
-                <img src="logotyp-black.png" class="img-loggo">
-                </a>
-            </div>
-            <div class="col-1-2">
-                <a href="contact.html">KONTAKT & PRISER</a>
-            </div>
-            <div class="col-1-2">
-                <a href="about.html">OM MIG</a>
-            </div>
-            <div class="col-1-2">
-                <a href="faq.html">FAQ</a>
-            </div>                       
-        </div>
-     </div> 
+    <!-- menues -->
+     
+    <!-- overlay menu for mobile devices -->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+          <a href="index.html" class="">Hem</a>
+          <a href="wedding.html" class="">Bröllop</a>
+          <a href="family.html" class="">Familj</a>
+          <a href="portrait.html" class="">Porträtt</a>
+          <a href="contact.html" class="">Priser & Kontakt</a>
+          <a href="about.html" class="">Om mig</a>
+          <a href="faq.html" class="">FAQ</a>
+          <a href="https://instagram.com/fotobyjullan" class=""><i class="fab fa-instagram fa-2xs"></i></a>
+          <a href="https://facebook.com/fotobyjullan" class=""><i class="fab fa-facebook-f fa-2xs"></i></a>
+      </div>
+    </div>
 
-     <!-- header -->
-     <div class="header">
-        <img src="gallery/header.jpg">
-     </div>
+      <span class="openbtn" onclick="openNav()"><p class="brand">Fotografi av Julia Billing</p> &#9776;</span>
+    <!-- .overlay menu for mobile devices -->
+    
+      <!-- Fixed Menu for larger devices -->
+      <div id="fixedMenu">
+        <div class="col-2 brand">
+            <a href="index.html">Fotografi av Julia Billing</a>
+        </div>
+        <div class="col-7">
+            <a href="index.html" class="">Hem</a>
+            <a href="wedding.html" class="">Bröllop</a>
+            <a href="family.html" class="">Familj</a>
+            <a href="portrait.html" class="">Porträtt</a>
+            <a href="contact.html" class="">Priser & Kontakt</a>
+            <a href="about.html" class="">Om mig</a>
+            <a href="faq.html" class="">FAQ</a>
+        </div>
+        <div class="col-2">
+            <div class="text text-primary">
+                <a href="https://instagram.com/fotobyjullan" class=""><i class="fab fa-instagram fa-2xs"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61567155113697" class=""><i class="fab fa-facebook-f fa-2xs"></i></a>
+            </div> 
+        </div>
+    </div>
+    
+      <!-- .Fixed Menu for larger devices -->
+    <!-- .menues -->
+
+    <!-- header -->
+<div class="header">
+    <img src="gallery/header.jpg" alt="">
+</div>
+<!-- .header -->
+
+<!-- main -->
 
      <!-- bröllopspaket - brons -->
-     <div class="col-6-blue">
-        <img src="gallery/prices/1.jpg" width="60%">
+      <div class="col-12 bg-primary text-light">
+     <div class="col-6 content-center">
+        <img src="gallery/prices/1.jpg" class="about-img">
      </div>
-     <div class="col-6-blue">
-        <h1>Bröllopspaket - Brons</h1>
+     <div class="col-6">
+        <p class="title">Bröllopspaket - <i>Brons</i></p>
         <p>Bronspaketet är perfekt för er som endast vill ha fokus på porträttbilderna. 
         <br/>
         <br/>
@@ -64,27 +90,28 @@
         <p>♥ Möte på ca 1 timme inklusive en provfotografering (ca 30 minuter).</p>
         <br/>
         <br/>
-        <div class="col-6-btn">
-            <div class="btn">
-              PRIS INKL. MOMS
-              <br/>
-              5 500,00 SEK
-              </div>
+        <div class="col-4 content-center">
+          <div class="btn">
+            PRIS INKL. MOMS <br>5 500,00 SEK
             </div>
-            <div class="col-6-btn">
-              <div class="btn">
-                <a href="mailto:juliabilling93@gmail.com"><b>BOKA</b></a>
-                </div>
-              </div>
+        </div>
+        <div class="col-4 content-center">
+          <div class="btn">
+            <a href="mailto:juliabilling93@gmail.com">BOKA</a>
+            </div>
+        </div>
      </div>
+    </div>
+    <!-- .bröllopspaket - brons -->
      
 
      <!-- bröllopspaket - silver -->
-     <div class="col-6">
-        <img src="gallery/prices/2.jpg" width="60%">
+      <div class="col-12">
+     <div class="col-6 content-center text-dark">
+        <img src="gallery/prices/2.jpg" class="about-img">
      </div>
      <div class="col-6">
-        <h1>Bröllopspaket - Silver</h1>
+        <p class="title">Bröllopspaket - <i>Silver</i></p>
         <p>Silverpaketet är perfekt för er som vill ha bilder från vigseln och porträtt 
         <br/>som ni kan se tillbaka en lång tid framöver.
         <br/>
@@ -100,26 +127,27 @@
         <p>♥ Möte på ca 1 timme inklusive en provfotografering (ca 30 minuter).</p>
         <br/>
         <br/>
-        <div class="col-6-btn">
-            <div class="btn">
-              PRIS INKL. MOMS
-              <br/>
-              10 900,00 SEK
-              </div>
+        <div class="col-4 content-center">
+          <div class="btn">
+            PRIS INKL. MOMS <br>10 900,00 SEK
             </div>
-            <div class="col-6-btn">
-              <div class="btn">
-                <a href="mailto:juliabilling93@gmail.com"><b>BOKA</b></a>
-                </div>
-              </div>
+        </div>
+        <div class="col-4 content-center">
+          <div class="btn">
+            <a href="mailto:juliabilling93@gmail.com">BOKA</a>
+            </div>
+        </div>
      </div>
+    </div>
+    <!-- .bröllopspaket - silver -->
     
      <!-- bröllopspaket - guld -->
-     <div class="col-6-blue">
-        <img src="gallery/prices/3.jpg" width="60%">
+      <div class="col-12 bg-primary text-light">
+     <div class="col-6 content-center">
+        <img src="gallery/prices/3.jpg" class="about-img">
      </div>
-     <div class="col-6-blue">
-        <h1>Bröllopspaket - Guld</h1>
+     <div class="col-6">
+        <p class="title">Bröllopspaket - <i>Guld</i></p>
         <p>Guldpaketet är för er som vill ha med större delen av dagen. 
         <br/>
         <br/>
@@ -139,26 +167,27 @@
         <p>♥ En (1) fotobok med ca 40 bilder från er stora dag.</p>
         <br/>
         <br/>
-        <div class="col-6-btn">
-            <div class="btn">
-              PRIS INKL. MOMS
-              <br/>
-              19 900,00 SEK
-              </div>
+        <div class="col-4 content-center">
+          <div class="btn">
+            PRIS INKL. MOMS <br>19 900,00 SEK
             </div>
-            <div class="col-6-btn">
-              <div class="btn">
-                <a href="mailto:juliabilling93@gmail.com"><b>BOKA</b></a>
-                </div>
-              </div>
+        </div>
+        <div class="col-4 content-center">
+          <div class="btn">
+            <a href="mailto:juliabilling93@gmail.com">BOKA</a>
+            </div>
+        </div>
      </div>
+    </div>
+    <!-- .bröllopspaket - guld -->
 
       <!-- bröllopspaket - diamant -->
-      <div class="col-6">
-        <img src="gallery/prices/4.jpg" width="60%">
+       <div class="col-12 text-dark">
+      <div class="col-6 content-center">
+        <img src="gallery/prices/4.jpg" class="about-img">
      </div>
      <div class="col-6">
-        <h1>Bröllopspaket - Diamant</h1>
+        <p class="title">Bröllopspaket - <i>Diamant</i></p>
         <p>Diamantpaketet är för er som vill att jag är med hela dagen. 
         <br/>Jag följer med från förberedelserna fram tills att ni skär upp tårtan/ efterrätten. 
         <br/>
@@ -176,26 +205,28 @@
         <p>♥ En (1) fotobok med ca 40 bilder från er stora dag.</p>
         <br/>
         <br/>
-        <div class="col-6-btn">
-            <div class="btn">
-              PRIS INKL. MOMS
-              <br/>
-              27 900,00 SEK
-              </div>
+
+        <div class="col-4 content-center">
+          <div class="btn">
+            PRIS INKL. MOMS <br>27 900,00 SEK
             </div>
-            <div class="col-6-btn">
-              <div class="btn">
-                <a href="mailto:juliabilling93@gmail.com"><b>BOKA</b></a>
-                </div>
-              </div>
+        </div>
+        <div class="col-4 content-center">
+          <div class="btn">
+            <a href="mailto:juliabilling93@gmail.com">BOKA</a>
+            </div>
+        </div>
      </div>
+    </div>
+    <!-- .bröllopspaket - diamant -->
 
      <!-- porträtt - enskilt -->
-     <div class="col-6-blue">
-        <img src="gallery/prices/5.jpg" width="60%">
+      <div class="col-12 bg-primary text-light">
+     <div class="col-6 content-center">
+        <img src="gallery/prices/5.jpg" class="about-img">
      </div>
-     <div class="col-6-blue">
-        <h1>Porträtt - Enskilt</h1>
+     <div class="col-6">
+        <h1>Porträtt - <i>Enskilt</i></h1>
         <p>Behöver du en sista minuten present till familj och släkt? 
         <br/>Vad är bättre än ett nytt porträtt? När vi är små uppdateras väggarna 
         <br/>hos ens mor- och farföräldrar med bilder från ens uppväxt.
@@ -213,26 +244,29 @@
         <p>Det går självfallet att köpa till fler bilder om man vill.</p>
         <br/>
         <br/>
-        <div class="col-6-btn">
-            <div class="btn">
-              PRIS INKL. MOMS
-              <br/>
-              1 900,00 SEK
-              </div>
+
+        <div class="col-4 content-center">
+          <div class="btn">
+            PRIS INKL. MOMS <br>1 900,00 SEK
             </div>
-            <div class="col-6-btn">
-              <div class="btn">
-                <a href="mailto:juliabilling93@gmail.com"><b>BOKA</b></a>
-                </div>
-              </div>
+        </div>
+        <div class="col-4 content-center">
+          <div class="btn">
+            <a href="mailto:juliabilling93@gmail.com">BOKA</a>
+            </div>
+        </div>
+
      </div>
+    </div>
+     <!-- .porträtt - enskilt -->
 
       <!-- porträtt - familj -->
-      <div class="col-6">
-        <img src="gallery/prices/6.jpg" width="60%">
+       <div class="col-12">
+      <div class="col-6 content-center">
+        <img src="gallery/prices/6.jpg" class="about-img">
      </div>
      <div class="col-6">
-        <h1>Porträtt - Familj</h1>
+        <h1>Porträtt - <i>Familj</i></h1>
         <p>Vill ni samla hela familjen för att skapa nya minnen? 
         <br/>Eller kanske föreviga generationer tillsammans – från barnbarn till mor- och farföräldrar? 
         <br/>Eller varför inte samla syskonen för att överraska era föräldrar med ett vackert familjeporträtt? 
@@ -258,58 +292,80 @@
         <p>♥ Reseersättning upp till 10 mil (därefter 25kr/mil)</p>
         <br/>
         <br/>
-        <div class="col-6-btn">
-            <div class="btn">
-              PRIS INKL. MOMS
-              <br/>
-              FRÅN. 3 400,00 SEK
-              </div>
-            </div>
-            <div class="col-6-btn">
-              <div class="btn">
-                <a href="mailto:juliabilling93@gmail.com"><b>BOKA</b></a>
-                </div>
-              </div>
-     </div>
 
-    <!-- footer -->
-    <div class="col-12-footer">
-      <img src="logotyp-hel.png" width="40%">
-      <br/>
-      <br/>
-      <a href="https://instagram.com/fotobyjullan">
-      <i class="fa-brands fa-square-instagram fa-2xl" style="color: #364754;"></i>
-      </a>
-      <a href="https://www.facebook.com/profile.php?id=61567155113697">
-      <i class="fa-brands fa-square-facebook fa-2xl" style="color: #364754;"></i>
-      </a>
-      <a href="mailto:juliabilling93@gmail.com">
-          <i class="fa-solid fa-square-envelope fa-2xl" style="color: #364754;"></i>
-      </a>
-      <br/>
-      <br/>
-      <br/>
-      <p3>OSKARSTRÖM, HALLAND</p3>
-      <br/>
-      <br/>
-      <p3>JULIABILLING93@GMAIL.COM</p3>
-      <br/>
-      <br/>
-      <p3>+46736 - 81 22 40</p3>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <div id="p4">ALL CONTENT COPYRIGHT © 2024 FOTOGRAFI AV JULIA BILLING - GODKÄND FÖR F-SKATT</div>
-   </div>
+        <div class="col-4 content-center">
+          <div class="btn">
+            PRIS INKL. MOMS <br> FRÅN. 3 400,00 SEK
+            </div>
+        </div>
+        <div class="col-4 content-center">
+          <div class="btn">
+            <a href="mailto:juliabilling93@gmail.com">BOKA</a>
+            </div>
+        </div>
+        
+     </div>
+    </div>
+     <!-- .porträtt - familj -->
+
+<!-- .main -->
+
+   <!-- Footer -->
+<!-- about me & contact info -->
+<div class="col-12 bg-primary">
+  <div class="col-6">
+      <p class="title text-light">Om Mig</p>
+      <p class="text-light">Bröllop- och familjefotograf som utgår från Halland,
+          men som mer än gärna reser för att föreviga era stora ögonblick.
+      </p>
+  
+          <address class="text-light">
+              <i class="fas fa-map-marker-alt"></i> 
+              Oskarström, Halland, Sverige
+          </address>
+  
+          <div class="phone text-light">
+              <i class="fas fa-mobile"></i> 
+              +46736 - 81 22 40 (SMS, så återkommer jag så fort jag kan!)
+          </div>
+          <div class="email text-light">
+              <i class="fas fa-envelope"></i> 
+              juliabilling93@gmail.com
+          </div>
+  </div>
+  <!-- .about me & contact info -->
+
+  <!-- tags & social media -->
+<div class="col-6">
+  <h2 class="title text-light">Tags</h2>
+
+  <div class="tags">
+          <a href="wedding.html" class="nav-link">Bröllop</a>
+          <a href="family.html" class="nav-link">Familj</a>
+          <a href="portrait.html" class="nav-link">Porträtt</a>
+          <a href="contact.html" class="nav-link">Priser</a>
+  </div>
+  
+
+  <h2 class="title text-light">Social</h2>
+
+  <div class="social">
+      <div class="d-flex flex-wrap">
+      <a href="https://instagram.com/jullansadventures" class="nav-link"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com/jullansadventures" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+      <a href="mailto:juliabilling93@gmail.com" class="nav-link"><i class="fas fa-envelope"></i></a>
+      </div>
+  </div>        
+</div>
+</div>
+<!-- .tags & social media -->
+
+<!-- copyright -->
+<div class="col-12 bg-primary">
+  <p class="text-light content-center">ALL CONTENT COPYRIGHT © 2025 JULIA BILLING - GODKÄND FÖR F-SKATT</p>
+</div>
+  <!-- copyright -->
+<!-- .Footer -->
 
 </body>
 </html>
