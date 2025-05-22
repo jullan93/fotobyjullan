@@ -1,0 +1,66 @@
+<!-- 2 recensioner - kod för när jag har genomfört 2 bröllop till -->
+    <div class="col-12 center-content bg-primary">
+        <div class="col-6 bg-secondary text-primary recensioner-card">
+            <p class="rubrik">Ellinor & </p>
+            <p><i class="fa-solid fa-heart"></i></p>
+            <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+        </div>
+        <div class="col-6 bg-secondary text-primary recensioner-card">
+            <p class="rubrik">Emma &</p>
+            <p><i class="fa-solid fa-heart"></i></p>
+            <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+        </div>
+    </div>
+
+<!-- 1 recension - kod för när jag har genomfört 1 familjefotografering -->
+<div class="col-12 center-content bg-primary">
+        <div class="col-2">
+
+        </div>
+        <div class="col-8 bg-secondary text-primary">
+            <p class="rubrik">Michaela & Percy</p>
+            <p><i class="fa-solid fa-heart"></i></p>
+            <p>"Det kändes så skönt att få en stund bara jag och min blivande man. Julia fanns där och fotograferade den stunden och lyckades fånga det på bild, och ändå kändes det som att det bara var jag och Emil <i class="fa-solid fa-heart"></i>"</p>
+        </div>
+        <div class="col-2">
+
+        </div>
+</div>
+
+
+<!-- 3 blogginlägg - kod för när jag har genomfört 3 familjefotograferingar, gravidfotograferingar & parfotograferingar -->
+<div class="col-12">
+        <div class="col-4 center-content">
+            <img src="images/mainpage/wedding.JPG" alt="">
+        </div>
+        <div class="col-4 center-content">
+            <img src="images/mainpage/wedding.JPG" alt="">
+        </div>
+        <div class="col-4 center-content">
+            <img src="images/mainpage/wedding.JPG" alt="">
+        </div>
+</div>
+
+<!-- inlägg1 -->
+     <div class="col-12 mainpage center-content">
+        <div class="col-12">
+            <p class="rubrik text-primary">SENASTE FRÅN BLOGGEN</p>
+        </div>
+        <div class="col-4">
+            <a href="wedding.html"><img src="images/wedding/blog3.png" alt=""></a>
+            <a href="wedding.html"><p class="text-dark title">→</p></a>
+        </div>
+        <!-- .inlägg1 -->
+        <!-- inlägg2 -->
+        <div class="col-4">
+            <a href="love.html"><img src="images/wedding/blog2.png" alt=""></a>
+            <a href="maternity.html"><p class="text-dark title">→</p></a>
+        </div>
+        <!-- .inlägg2 -->
+        <!-- inlägg3 -->
+        <div class="col-4">
+            <a href="family.html"><img src="images/wedding/blog1.png" alt=""></a>
+            <a href="family.html"><p class="text-dark title">→</p></a>
+        </div>
+        <!-- .inlägg3 -->
+     </div>
